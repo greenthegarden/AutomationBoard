@@ -12,7 +12,7 @@
 #include "WProgram.h"
 #endif
 
-// pin definitions for Automation Board
+// pin definitions for the Automation Board
 
 // Pin Function
 // D0  Serial Communication (RX) / XBee DOUT
@@ -29,10 +29,7 @@
 // A1  Infrared out
 // A2, A3, A4, A4 Available
 
-#define RELAY_1      5  // Relay 1 is connected to Arduino D5
-#define RELAY_2      6  // Relay 2 is connected to Arduino D6
-#define RELAY_3      7  // Relay 3 is connected to Arduino D7
-#define RELAY_4      8  // Relay 4 is connected to Arduino D8
+
 
 const byte RelayPins[] = { RELAY_1, RELAY_2, RELAY_3, RELAY_4 };
 
@@ -43,9 +40,19 @@ class AutomationBoard
 public:
   AutomationBoard();
 private:
+  const unsigned int RELAY_1_PIN = 5; // Relay 1 is connected to Arduino D5
+  const unsigned int RELAY_2_PIN = 6; // Relay 2 is connected to Arduino D6
+  const unsigned int RELAY_3_PIN = 7; // Relay 3 is connected to Arduino D7
+  const unsigned int RELAY_4_PIN = 8; // Relay 4 is connected to Arduino D8
+
+  const byte RelayPins[] = {RELAY_1, RELAY_2, RELAY_3, RELAY_4};
 
 public:
   void init();
+  byte getRelay1Pin();
+  byte getRelay2Pin();
+  byte getRelay3Pin();
+  byte getRelay4Pin();
 };
 
 
