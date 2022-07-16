@@ -1,0 +1,25 @@
+{
+  "name": "AutomationBoard",
+  "version": "1.0.0",
+  "description": "Header file to specify Automation Board pin configuration",
+  "keywords": "pin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greenthegarden/AutomationBoard"
+  },
+  "authors": [
+    {
+      "name": "Philip Cutler",
+      "email": "greenthegarden@gmail.com",
+      "url": "https://www.linkedin.com/in/philip-cutler-b3b180213/",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/greenthegarden/AutomationBoard",
+  "dependencies": {
+
+  },
+  "frameworks": "*",
+  "platforms": "*"
+}
