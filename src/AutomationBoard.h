@@ -30,22 +30,20 @@
 // A2, A3, A4, A4 Available
 
 
-
-const byte RelayPins[] = { RELAY_1, RELAY_2, RELAY_3, RELAY_4 };
-
-//int PWM_PINS[4] = { 2, 4, 5, 8 };
+// int PWM_PINS[4] = { 2, 4, 5, 8 };
 
 class AutomationBoard
 {
 public:
   AutomationBoard();
-private:
-  const unsigned int RELAY_1_PIN = 5; // Relay 1 is connected to Arduino D5
-  const unsigned int RELAY_2_PIN = 6; // Relay 2 is connected to Arduino D6
-  const unsigned int RELAY_3_PIN = 7; // Relay 3 is connected to Arduino D7
-  const unsigned int RELAY_4_PIN = 8; // Relay 4 is connected to Arduino D8
 
-  const byte RelayPins[] = {RELAY_1, RELAY_2, RELAY_3, RELAY_4};
+private:
+  const byte RELAY_1_PIN = 5; // Relay 1 is connected to Arduino D5
+  const byte RELAY_2_PIN = 6; // Relay 2 is connected to Arduino D6
+  const byte RELAY_3_PIN = 7; // Relay 3 is connected to Arduino D7
+  const byte RELAY_4_PIN = 8; // Relay 4 is connected to Arduino D8
+
+  byte RELAY_PINS[4] = {RELAY_1_PIN, RELAY_2_PIN, RELAY_3_PIN, RELAY_4_PIN};
 
 public:
   void init();
@@ -55,5 +53,4 @@ public:
   byte getRelay4Pin();
 };
 
-
-#endif  /* AUTOMATIONBOARD_H_ */
+#endif /* AUTOMATIONBOARD_H_ */

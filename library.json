@@ -1,6 +1,6 @@
 {
   "name": "AutomationBoard",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Header file to specify Automation Board pin configuration",
   "keywords": "pin",
   "repository": {

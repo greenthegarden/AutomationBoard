@@ -4,19 +4,22 @@
 #include "WProgram.h"
 #endif
 
-
 #include "AutomationBoard.h"
 
 AutomationBoard::AutomationBoard()
-{}
+{
+}
 
-void AutomationBoard::init() {
-  for (byte i=0; i<sizeof(RelayPins); i++) {
-    pinMode(RelayPins[i], OUTPUT);
+void AutomationBoard::init()
+{
+  for (byte i = 0; i < sizeof(RELAY_PINS); i++)
+  {
+    pinMode(RELAY_PINS[i], OUTPUT);
   }
 }
 
-byte AutomationBoard::getRelay1Pin() {
+byte AutomationBoard::getRelay1Pin()
+{
   return RELAY_1_PIN;
 }
 

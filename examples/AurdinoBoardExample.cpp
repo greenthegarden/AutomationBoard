@@ -1,4 +1,6 @@
-#include <AutomationBoard.h>
+#include "AutomationBoard.h"
+
+AutomationBoard automationboard;
 
 /*--------------------------------------------------------------------------------------
   setup()
@@ -8,12 +10,12 @@ void setup()
 {
   Serial.begin(9600);
 
-  AutomationBoard().init();
+  automationboard.init();
 
-  Serial.println(AutomationBoard().getRelay1Pin());
-  Serial.println(AutomationBoard().getRelay2Pin());
-  Serial.println(AutomationBoard().getRelay3Pin());
-  Serial.println(AutomationBoard().getRelay4Pin());
+  Serial.println(automationboard.getRelay1Pin());
+  Serial.println(automationboard.getRelay2Pin());
+  Serial.println(automationboard.getRelay3Pin());
+  Serial.println(automationboard.getRelay4Pin());
 }
 
 /*--------------------------------------------------------------------------------------
